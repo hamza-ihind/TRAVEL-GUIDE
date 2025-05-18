@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agadir Tourism Guide</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">AgadirExplorer</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#booking">Book Guide</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1>Discover Agadir with AgadirExplorer</h1>
+      <p>Your one-stop platform for authentic tours, certified local guides, and seamless bookings in Agadir, Morocco.</p>
+      <button class="btn-primary" onclick="scrollToSection('about')">Learn More</button>
+    </div>
+  </section>
+
+  
+  <section id="about" class="about container">
+    <div class="text">
+      <h2>About AgadirExplorer</h2>
+      <p>AgadirExplorer is an online travel platform dedicated to providing travelers with curated experiences in Agadir. From guided cultural walks to adventure-packed excursions, our mission is to connect you with the best local guides and authentic Moroccan hospitality. Book with confidence, enjoy flexible payment options, and explore with ease.</p>
+    </div>
+    <div class="text">
+      <h2>About Agadir</h2>
+      <p>Agadir is a vibrant coastal city on Morocco’s southern Atlantic coast, famous for its golden beaches, modern marina, and the historic Kasbah overlooking the bay. Known for year-round sunshine and a relaxed beachfront atmosphere, Agadir offers a perfect blend of cultural heritage, outdoor adventure, and world-class amenities. Whether you’re looking to surf the waves in Taghazout, explore the lush Paradise Valley, or savor fresh seafood at the marina, Agadir has something for every traveler.</p>
+    </div>
+  </section>
+
+  
+  <section id="tours" class="tours container">
+    <h2>Popular Tours</h2>
+    <div id="tour-container" class="tour-grid"></div>
+  </section>
+
+ 
+  <section id="reviews" class="reviews container">
+    <h2>What Our Customers Say</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <p>"Amazing experience! Our guide Ahmed was knowledgeable and friendly. Highly recommend!"</p>
+        <h4>- Sarah, UK</h4>
+      </div>
+      <div class="review-card">
+        <p>"Paradise Valley was breathtaking. Booking was seamless and the app is so user-friendly."</p>
+        <h4>- Jorge, Spain</h4>
+      </div>
+      <div class="review-card">
+        <p>"Loved the cooking class! Delicious food and a fun atmosphere."</p>
+        <h4>- Emily, USA</h4>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="booking" class="booking container">
+    <h2>Book a Guide</h2>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <select name="tourId" required><option value="" disabled selected>Select a Tour</option></select>
+      <button type="submit" class="btn-primary">Reserve Now</button>
+    </form>
+    <div id="booking-message" class="booking-message"></div>
+  </section>
+
+  
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#tours">Tours</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#booking">Book</a>
+      </div>
+      <p>Contact us at <a href="mailto:info@agadirexplorer.com">info@agadirexplorer.com</a></p>
+      <p>&copy; 2025 AgadirExplorer</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

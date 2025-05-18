@@ -1,0 +1,5 @@
+[
+  {"id":"agadir-city","title":"Agadir City Highlights","description":"Discover the Kasbah, local souks and the beach promenade.","duration":"4 hours","price":"$30","image":"https://th.bing.com/th/id/OIP.JDQLcj7H9ADrtlsAHtCCSwHaE8?w=89&h=90&c=1&rs=1&qlt=90&pcl=292827&r=0&dpr=1.3&pid=InlineBlock"},
+  {"id":"paradise-valley","title":"Paradise Valley Adventure","description":"Hike and swim in the stunning Oasis of Paradise Valley.","duration":"Full Day","price":"$50","image":"https://th.bing.com/th/id/OIP.3LzAqQLn27UCpt80WoDcHwHaEp?w=296&h=186&c=7&pcl=292827&r=0&o=5&dpr=1.3&pid=1.7"},
+  {"id":"taghazout-surf","title":"Taghazout Surf Experience","description":"Learn to surf or ride waves in Taghazout Bay.","duration":"Half Day","price":"$40","image":"https://th.bing.com/th/id/OIP.Yhd_zRKtarlHKe4Upw66IAHaE1?w=259&h=180&c=7&pcl=292827&r=0&o=5&dpr=1.3&pid=1.7"}
+]

@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #00b4d8;
+  --accent-color: #90e0ef;
+  --dark-color: #023e8a;
+  --light-color: #f1f1f1;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-sans); color: #333; }
+.container { max-width: 1200px; margin: auto; padding: 1rem; }
+header { background: var(--primary-color); position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; align-items: center; justify-content: space-between; }
+.logo { font-family: var(--font-serif); font-size: 1.8rem; color: #fff; text-decoration: none; }
+#nav-toggle { background: none; border: none; color: #fff; font-size: 1.5rem; display: none; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: 600; }
+
+.hero { position: relative; height: 80vh; background: url('https://source.unsplash.com/featured/?agadir') center/cover no-repeat; display: flex; align-items: center; }
+.hero .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+.hero-content { position: relative; color: #fff; text-align: center; }
+.hero-content h1 { font-family: var(--font-serif); font-size: 3rem; margin-bottom: 1rem; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+.btn-primary { background: var(--secondary-color); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+.btn-primary:hover { background: var(--accent-color); }
+
+.about, .tours, .reviews, .booking { padding: 4rem 0; }
+.about h2, .tours h2, .reviews h2, .booking h2 { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem; text-align: center; }
+.about p { font-size: 1rem; line-height: 1.6; }
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+.tour-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.tour-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+.tour-card img { width: 100%; height: 180px; object-fit: cover; }
+.tour-card-content { padding: 1rem; flex: 1; display: flex; flex-direction: column; }
+.tour-card-content h3 { font-family: var(--font-serif); margin-bottom: 0.5rem; }
+.tour-card-content p { flex: 1; margin-bottom: 0.5rem; }
+.tour-card-content button { align-self: flex-start; background: var(--dark-color); color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s; }
+.tour-card-content button:hover { background: var(--primary-color); }
+
+.reviews .review-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.review-card { background: var(--light-color); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.review-card p { font-style: italic; margin-bottom: 1rem; }
+.review-card h4 { text-align: right; font-weight: 600; }
+
+.booking form { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 500px; margin: auto; }
+.booking input, .booking select { padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; }
+.booking-message { margin-top: 1rem; font-weight: 600; color: var(--dark-color); text-align: center; }
+
+footer { background: var(--dark-color); color: #fff; padding: 2rem 0; text-align: center; }
+.footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+.footer-links a { color: #fff; text-decoration: none; }
+
+
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; }
+.modal-content { background: #fff; padding: 2rem; border-radius: 8px; max-width: 600px; width: 90%; position: relative; }
+.modal-close { position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; cursor: pointer; }
+
+
+@media(max-width:768px) {
+  #nav-toggle { display: block; }
+  .nav-links { position: absolute; top: 100%; left: 0; background: var(--primary-color); width: 100%; flex-direction: column; display: none; }
+  .nav-links.show { display: flex; }
+}
